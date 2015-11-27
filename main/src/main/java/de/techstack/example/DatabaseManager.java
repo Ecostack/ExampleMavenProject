@@ -67,7 +67,6 @@ public class DatabaseManager {
             lcStatement.setBoolean(2, true);
             lcResult = lcStatement.executeUpdate();
         }
-        // System.out.printf("DB write result %d at BLZ %s \n", lcResult, pBLZ);
         return lcResult > 0;
     }
 
@@ -82,8 +81,6 @@ public class DatabaseManager {
         while (lcRS.next()) {
             lcName = lcRS.getString("name");
         }
-
-        //System.out.printf("Row Count %d for BLZ %s \n", lcRowCount, pBLZ);
         return lcName;
     }
 }
