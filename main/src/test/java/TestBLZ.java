@@ -8,7 +8,7 @@ import java.sql.SQLException;
 /**
  * Created by basti on 27.11.15.
  */
-public class TestChecker {
+public class TestBLZ {
 
     @Test
     public void testBLZ1() throws SQLException {
